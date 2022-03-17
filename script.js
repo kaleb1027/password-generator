@@ -31,7 +31,16 @@ function generatePassword(){
   var lower = window.confirm("Would you like to include lowercase characters in the randomization?");
   var upper = window.confirm("Would you like to include uppercase characters in the randomization?");
   var number = window.confirm("Would you like to include numbers in the randomization?");
-  var special = window.confirm("Would you like to include special characters in the randomization?")
+  var special = window.confirm("Would you like to include special characters in the randomization?");
+
+  if(lower == false && upper == false && number == false && special == false){
+    window.alert("Sorry, you need to choose at LEAST one character type.");
+    generatePassword();
+  }
+
+  
+
+
 }
 
 // Write password to the #password input
