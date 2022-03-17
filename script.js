@@ -71,8 +71,18 @@ function generatePassword(){
     return(charChoice);
   }
 
+  var charOptions = genLogic();
   
+  var newPW = "";
+
+  for (var i = 0; i < pwLen; i++){
+    var randomNumber = Math.floor(Math.random() * charOptions.length);
+    newPW += charOptions[randomNumber];
+  }
+
+  return(newPW);
   
+
 
 }
 
