@@ -38,8 +38,41 @@ function generatePassword(){
     generatePassword();
   }
 
-  
+  function genLogic(){
+    var charChoice = [];
+    if(lower == true){
+      var lowerChars = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+      for(i = 0; i < lowerChars.length; i++)
+      {
+        charChoice.push(lowerChars[i]);
+      }
+    }
+    if(upper == true){
+      var upperChars = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+      for(i = 0; i < upperChars.length; i++)
+      {
+        charChoice.push(upperChars[i]);
+      }
+    }
+    if(number == true){
+      var numChars = ["0","1","2","3","4","5","6","7","8","9"];
+      for(i = 0; i < numChars.length; i++)
+      {
+        charChoice.push(numChars[i]);
+      }
+    }
+    if(special == true){
+      var specChars = ["!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","{","]","}","\\","|",";",":","'","\"",",","<",".",">","/","?"];
+      for(i = 0; i < specChars.length; i++)
+      {
+        charChoice.push(specChars[i]);
+      }
+    }
+    return(charChoice);
+  }
 
+  
+  
 
 }
 
