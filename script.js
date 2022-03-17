@@ -27,6 +27,11 @@ function generatePassword(){
     window.alert("Try again, the length must be between 8 - 128 characters long (inclusive).");
     generatePassword();
   }
+
+  var lower = window.confirm("Would you like to include lowercase characters in the randomization?");
+  var upper = window.confirm("Would you like to include uppercase characters in the randomization?");
+  var number = window.confirm("Would you like to include numbers in the randomization?");
+  var special = window.confirm("Would you like to include special characters in the randomization?")
 }
 
 // Write password to the #password input
